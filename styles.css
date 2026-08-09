@@ -1,0 +1,13 @@
+/* 간단한 레이아웃과 타이포그래피 */
+:root{--bg:#f7f9fc;--accent:#2176ff;--muted:#6b7280}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#0f172a;margin:0}
+header{background:#fff;padding:24px 32px;border-bottom:1px solid #e6eef8}
+header h1{margin:0 0 6px;font-size:24px}
+header p{margin:0;color:var(--muted)}
+nav{margin-top:12px}
+nav a{margin-right:12px;color:var(--accent);text-decoration:none}
+main{max-width:900px;margin:28px auto;padding:0 20px}
+section{background:#fff;padding:18px;border-radius:8px;margin-bottom:14px;box-shadow:0 1px 2px rgba(16,24,40,0.03)}
+section h2{margin-top:0}
+footer{max-width:900px;margin:12px auto 40px;padding:8px 20px;color:var(--muted)}
+ul{line-height:1.6}
