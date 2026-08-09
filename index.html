@@ -1,112 +1,613 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TP 업무 소개</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="TP Middleware Operations 업무 소개"
+    >
+
+    <title>TP Middleware | 업무 소개</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1>TP 업무 소개</h1>
-        <p class="tagline">장애 대응 · 배포/운영 · 성능 관리 · 시스템 점검 · 자동화 · 예방</p>
-      </div>
-      <nav class="main-nav">
-        <a href="#incident">장애 대응</a>
-        <a href="#deployment">배포/운영</a>
-        <a href="#performance">성능</a>
-        <a href="#system">시스템</a>
-        <a href="#automation">자동화</a>
-        <a href="#prevention">예방</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
+<!-- =========================
+     Header
+========================= -->
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="#top" class="brand">
+            TP <span>MIDDLEWARE</span>
+        </a>
+
+        <nav>
+            <a href="#about">TP란?</a>
+            <a href="#work">주요 업무</a>
+            <a href="#response">장애 대응</a>
+            <a href="#automation">운영 자동화</a>
+        </nav>
+
+        <button
+            class="menu-btn"
+            aria-label="메뉴 열기"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<main id="top">
+
+
+<!-- =========================
+     Hero
+========================= -->
+
+<section class="hero">
+
+    <div class="container hero-inner">
+
+        <div class="hero-copy">
+
+            <p class="eyebrow">
+                TP MIDDLEWARE OPERATIONS
+            </p>
+
+            <h1>
+                안정적인 금융 서비스를 위한<br>
+                <strong>TP 미들웨어 운영</strong>
+            </h1>
+
+            <p class="hero-desc">
+                서비스의 안정적인 트랜잭션 처리를 위해<br>
+                장애 대응부터 배포, 성능 관리, 자동화까지<br>
+                TP 시스템을 운영합니다.
+            </p>
+
+            <a
+                class="primary-btn"
+                href="#work"
+            >
+                주요 업무 보기
+                <span>↓</span>
+            </a>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="status-head">
+
+                <span>TP SYSTEM</span>
+
+                <span class="online">
+                    <i></i>
+                    OPERATING
+                </span>
+
+            </div>
+
+
+            <div class="system-row">
+                <span>Service</span>
+                <b>Normal</b>
+            </div>
+
+            <div class="system-row">
+                <span>Process</span>
+                <b>Running</b>
+            </div>
+
+            <div class="system-row">
+                <span>Response</span>
+                <b>Stable</b>
+            </div>
+
+            <div class="system-row">
+                <span>Monitoring</span>
+                <b>Active</b>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     TP란?
+========================= -->
+
+<section
+    class="about section"
+    id="about"
+>
+
+    <div class="container about-grid">
+
+        <div>
+
+            <p class="eyebrow">
+                WHAT IS TP?
+            </p>
+
+            <h2>
+                TP Middleware
+            </h2>
+
+        </div>
+
+
+        <div class="about-text">
+
+            <p class="lead">
+                Transaction Processing
+            </p>
+
+            <p>
+                TP(Transaction Processing) 미들웨어는
+                여러 사용자의 요청을 안정적으로 처리하고
+                서버와 서비스 사이의 트랜잭션을 관리하는
+                핵심 시스템입니다.
+            </p>
+
+
+            <div class="architecture">
+
+                <span>WEB</span>
+
+                <b>→</b>
+
+                <span>WAS</span>
+
+                <b>→</b>
+
+                <strong>TP</strong>
+
+                <b>→</b>
+
+                <span>DB</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     주요 업무
+========================= -->
+
+<section
+    class="work section"
+    id="work"
+>
+
     <div class="container">
-      <div class="hero-content">
-        <h2>TP 운영팀의 핵심 업무와 자동화 샘플</h2>
-        <p>장애 대응부터 배포, 성능 관리, 시스템 점검, 자동화까지 실제 운영에서 바로 사용할 수 있는 가이드와 스크립트를 제공합니다.</p>
-        <p class="hero-cta"><a class="btn" href="#incident">시작하기</a> <a class="btn btn-outline" href="#automation">스크립트 보기</a></p>
-      </div>
+
+        <div class="section-head">
+
+            <div>
+
+                <p class="eyebrow">
+                    CORE RESPONSIBILITIES
+                </p>
+
+                <h2>
+                    주요 업무
+                </h2>
+
+            </div>
+
+            <p>
+                TP 시스템의 안정적인 운영을 위해<br>
+                다음과 같은 업무를 수행합니다.
+            </p>
+
+        </div>
+
+
+
+        <div class="work-grid">
+
+
+            <!-- 01 -->
+
+            <article class="work-card">
+
+                <span class="number">
+                    01
+                </span>
+
+                <h3>
+                    장애 대응 및<br>
+                    원인 분석
+                </h3>
+
+                <p>
+                    TP 서버 Boot 실패, Core Dump,
+                    로그 분석 및 서비스 응답 지연과
+                    Timeout 원인을 분석합니다.
+                </p>
+
+                <ul>
+                    <li>Boot 실패 분석</li>
+                    <li>Core Dump 분석</li>
+                    <li>ULOG · SLOG · TMLOG</li>
+                    <li>Timeout 분석</li>
+                </ul>
+
+            </article>
+
+
+
+            <!-- 02 -->
+
+            <article class="work-card">
+
+                <span class="number">
+                    02
+                </span>
+
+                <h3>
+                    서비스 배포 및<br>
+                    운영
+                </h3>
+
+                <p>
+                    서비스가 안정적으로 운영될 수 있도록
+                    신규 서비스 등록과 서버 및 Binary를
+                    관리합니다.
+                </p>
+
+                <ul>
+                    <li>신규 서비스 등록</li>
+                    <li>서버 추가</li>
+                    <li>Binary 배포</li>
+                </ul>
+
+            </article>
+
+
+
+            <!-- 03 -->
+
+            <article class="work-card">
+
+                <span class="number">
+                    03
+                </span>
+
+                <h3>
+                    성능 관리
+                </h3>
+
+                <p>
+                    시스템 자원과 서비스 응답 상태를
+                    지속적으로 확인하고 성능 저하
+                    원인을 분석합니다.
+                </p>
+
+                <ul>
+                    <li>CPU · Memory</li>
+                    <li>프로세스 상태</li>
+                    <li>응답시간</li>
+                    <li>병목 분석</li>
+                </ul>
+
+            </article>
+
+
+
+            <!-- 04 -->
+
+            <article class="work-card">
+
+                <span class="number">
+                    04
+                </span>
+
+                <h3>
+                    시스템 점검
+                </h3>
+
+                <p>
+                    정기적인 시스템 점검을 통해
+                    운영 환경을 안정적으로 유지하고
+                    필요한 작업을 수행합니다.
+                </p>
+
+                <ul>
+                    <li>디스크 용량 확인</li>
+                    <li>로그 정리</li>
+                    <li>Backup 확인</li>
+                    <li>Patch · 재기동</li>
+                </ul>
+
+            </article>
+
+
+
+            <!-- 05 -->
+
+            <article class="work-card">
+
+                <span class="number">
+                    05
+                </span>
+
+                <h3>
+                    운영 자동화
+                </h3>
+
+                <p>
+                    Shell Script를 활용해 반복적인
+                    운영 작업을 자동화하고 업무 효율과
+                    정확성을 높입니다.
+                </p>
+
+                <ul>
+                    <li>배포 자동화</li>
+                    <li>백업 자동화</li>
+                    <li>로그 삭제</li>
+                    <li>상태 점검 · 재기동</li>
+                </ul>
+
+            </article>
+
+
+
+            <!-- 06 -->
+
+            <article class="work-card">
+
+                <span class="number">
+                    06
+                </span>
+
+                <h3>
+                    장애 예방
+                </h3>
+
+                <p>
+                    사전 모니터링과 점검을 통해
+                    장애 발생 가능성을 낮추고
+                    안정적인 운영 환경을 유지합니다.
+                </p>
+
+                <ul>
+                    <li>모니터링</li>
+                    <li>로그 분석</li>
+                    <li>용량 관리</li>
+                    <li>패치 · 취약점 조치</li>
+                </ul>
+
+            </article>
+
+        </div>
+
     </div>
-  </section>
 
-  <main>
-    <section id="incident" class="card">
-      <h2>1. 장애 대응 및 원인 분석</h2>
-      <ul>
-        <li><strong>TP 서버 Boot 실패 분석</strong>: 부팅 로그, dmesg, journalctl 확인</li>
-        <li><strong>Core Dump 분석</strong>: gdb를 이용한 백트레이스 수집</li>
-        <li><strong>ULOG, SLOG, TMLOG 로그 확인</strong>: 로그 파싱 및 상관관계 분석</li>
-        <li><strong>서비스 응답 지연 및 Timeout 분석</strong>: 네트워크/프로세스/DB 지연 원인 추적</li>
-      </ul>
-    </section>
+</section>
 
-    <section id="deployment" class="card">
-      <h2>2. 서비스 배포 및 운영</h2>
-      <ul>
-        <li><strong>신규 서비스 등록</strong>: 서비스 메타데이터 및 모니터링 설정</li>
-        <li><strong>서버 추가</strong>: 롤링 프로비저닝과 LB 등록 절차</li>
-        <li><strong>Binary 배포</strong>: 안전한 롤백을 가진 배포 파이프라인</li>
-      </ul>
-    </section>
 
-    <section id="performance" class="card">
-      <h2>3. 성능 관리</h2>
-      <ul>
-        <li><strong>CPU 사용률</strong> 모니터링: 경고 임계치 정의</li>
-        <li><strong>Memory 사용률</strong> 추적: 누수 감지</li>
-        <li><strong>프로세스 상태</strong> 확인: 주요 데몬 헬스체크</li>
-        <li><strong>응답시간 모니터링</strong>: SLO/SLA 기반 알림</li>
-        <li><strong>병목 분석</strong>: flamegraph, 프로파일링 도구 활용</li>
-      </ul>
-    </section>
 
-    <section id="system" class="card">
-      <h2>4. 시스템 점검</h2>
-      <ul>
-        <li><strong>디스크 용량 확인</strong>: 용량 임계치 및 자동 경보</li>
-        <li><strong>로그 정리</strong>: 보관 정책 및 압축/삭제</li>
-        <li><strong>Backup 확인</strong>: 복원 테스트 포함</li>
-        <li><strong>Patch 적용</strong>: 검증과 롤백 계획</li>
-        <li><strong>재기동 작업</strong>: 안전한 재기동 절차 문서화</li>
-      </ul>
-    </section>
+<!-- =========================
+     장애 대응
+========================= -->
 
-    <section id="automation" class="card">
-      <h2>5. 운영 자동화</h2>
-      <p>Shell Script를 이용한 샘플 자동화 스크립트를 제공합니다. (scripts 디렉터리)</p>
-      <ul>
-        <li>배포 자동화: <a href="scripts/deploy.sh">deploy.sh</a></li>
-        <li>백업 자동화: <a href="scripts/backup.sh">backup.sh</a></li>
-        <li>로그 삭제: <a href="scripts/log_cleanup.sh">log_cleanup.sh</a></li>
-        <li>상태 점검: <a href="scripts/check_status.sh">check_status.sh</a></li>
-        <li>재기동 자동화: <a href="scripts/restart.sh">restart.sh</a></li>
-      </ul>
-    </section>
+<section
+    class="response section"
+    id="response"
+>
 
-    <section id="prevention" class="card">
-      <h2>6. 장애 예방</h2>
-      <ul>
-        <li><strong>모니터링</strong>: 지표 + 로그 융합 알람</li>
-        <li><strong>로그 분석</strong>: 주기적 패턴 탐지 및 인사이트</li>
-        <li><strong>용량 관리</strong>: 예측 기반 확장 계획</li>
-        
-        <li><strong>패치 적용</strong>: 취약점 기준 우선순위</li>
-        <li><strong>취약점 조치</strong>: CVE 기반 대응 프로세스</li>
-      </ul>
-    </section>
+    <div class="container">
 
-  </main>
+        <div class="section-head light">
 
-  <footer>
-    <p>작성자: TP 운영팀 | 페이지 생성: 자동 샘플</p>
-  </footer>
+            <div>
+
+                <p class="eyebrow">
+                    INCIDENT RESPONSE
+                </p>
+
+                <h2>
+                    장애 대응 프로세스
+                </h2>
+
+            </div>
+
+            <p>
+                장애 현상을 확인하고 원인을 분석한 후<br>
+                서비스를 정상화하고 재발을 예방합니다.
+            </p>
+
+        </div>
+
+
+        <div class="process">
+
+            <div>
+                <span>01</span>
+                <b>장애 발생</b>
+                <small>이상 현상 인지</small>
+            </div>
+
+            <i>→</i>
+
+            <div>
+                <span>02</span>
+                <b>상태 확인</b>
+                <small>프로세스 · 서버 점검</small>
+            </div>
+
+            <i>→</i>
+
+            <div>
+                <span>03</span>
+                <b>로그 분석</b>
+                <small>ULOG · SLOG · TMLOG</small>
+            </div>
+
+            <i>→</i>
+
+            <div>
+                <span>04</span>
+                <b>원인 분석</b>
+                <small>문제 구간 및 원인 확인</small>
+            </div>
+
+            <i>→</i>
+
+            <div>
+                <span>05</span>
+                <b>정상화</b>
+                <small>조치 및 재발 방지</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     운영 자동화
+========================= -->
+
+<section
+    class="automation section"
+    id="automation"
+>
+
+    <div class="container automation-grid">
+
+        <div>
+
+            <p class="eyebrow">
+                AUTOMATION
+            </p>
+
+            <h2>
+                반복 업무는<br>
+                <strong>자동화</strong>합니다.
+            </h2>
+
+            <p>
+                Shell Script를 활용하여 배포, 백업,
+                로그 관리, 상태 점검, 재기동 등
+                반복적인 운영 업무를 자동화합니다.
+            </p>
+
+        </div>
+
+
+        <div class="terminal">
+
+            <div class="terminal-top">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <em>
+                    tp-operation.sh
+                </em>
+
+            </div>
+
+
+            <pre><code>$ ./tp-operation.sh
+
+[CHECK] Process status    ... OK
+[CHECK] Disk capacity     ... OK
+[CHECK] Log status        ... OK
+[BACKUP] Configuration    ... DONE
+[DEPLOY] Binary           ... DONE
+[CHECK] Service status    ... NORMAL
+
+System operation completed.</code></pre>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     Closing
+========================= -->
+
+<section class="closing">
+
+    <div class="container">
+
+        <p class="eyebrow">
+            TP MIDDLEWARE OPERATIONS
+        </p>
+
+        <h2>
+            Stable System.<br>
+            <strong>Reliable Service.</strong>
+        </h2>
+
+        <p>
+            안정적인 시스템 운영을 통해
+            금융 서비스의 신뢰성을 지켜갑니다.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================
+     Footer
+========================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <strong>
+            TP MIDDLEWARE
+        </strong>
+
+        <span>
+            TP Middleware Operations Portfolio
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
