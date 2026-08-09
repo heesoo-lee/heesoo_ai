@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TP 업무 소개</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>TP 업무 소개</h1>
+    <p>장애 대응, 서비스 배포/운영, 성능 관리, 시스템 점검, 운영 자동화, 장애 예방</p>
+    <nav>
+      <a href="#incident">1. 장애 대응 및 원인 분석</a>
+      <a href="#deployment">2. 서비스 배포 및 운영</a>
+      <a href="#performance">3. 성능 관리</a>
+      <a href="#system">4. 시스템 점검</a>
+      <a href="#automation">5. 운영 자동화</a>
+      <a href="#prevention">6. 장애 예방</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="incident">
+      <h2>1. 장애 대응 및 원인 분석</h2>
+      <ul>
+        <li><strong>TP 서버 Boot 실패 분석</strong>: 부팅 로그, dmesg, journalctl 확인</li>
+        <li><strong>Core Dump 분석</strong>: gdb를 이용한 백트레이스 수집</li>
+        <li><strong>ULOG, SLOG, TMLOG 로그 확인</strong>: 로그 파싱 및 상관관계 분석</li>
+        <li><strong>서비스 응답 지연 및 Timeout 분석</strong>: 네트워크/프로세스/DB 지연 원인 추적</li>
+      </ul>
+    </section>
+
+    <section id="deployment">
+      <h2>2. 서비스 배포 및 운영</h2>
+      <ul>
+        <li><strong>신규 서비스 등록</strong>: 서비스 메타데이터 및 모니터링 설정</li>
+        <li><strong>서버 추가</strong>: 롤링 프로비저닝과 LB 등록 절차</li>
+        <li><strong>Binary 배포</strong>: 안전한 롤백을 가진 배포 파이프라인</li>
+      </ul>
+    </section>
+
+    <section id="performance">
+      <h2>3. 성능 관리</h2>
+      <ul>
+        <li><strong>CPU 사용률</strong> 모니터링: 경고 임계치 정의</li>
+        <li><strong>Memory 사용률</strong> 추적: 누수 감지</li>
+        <li><strong>프로세스 상태</strong> 확인: 주요 데몬 헬스체크</li>
+        <li><strong>응답시간 모니터링</strong>: SLO/SLA 기반 알림</li>
+        <li><strong>병목 분석</strong>: flamegraph, 프로파일링 도구 활용</li>
+      </ul>
+    </section>
+
+    <section id="system">
+      <h2>4. 시스템 점검</h2>
+      <ul>
+        <li><strong>디스크 용량 확인</strong>: 용량 임계치 및 자동 경보</li>
+        <li><strong>로그 정리</strong>: 보관 정책 및 압축/삭제</li>
+        <li><strong>Backup 확인</strong>: 복원 테스트 포함</li>
+        <li><strong>Patch 적용</strong>: 검증과 롤백 계획</li>
+        <li><strong>재기동 작업</strong>: 안전한 재기동 절차 문서화</li>
+      </ul>
+    </section>
+
+    <section id="automation">
+      <h2>5. 운영 자동화</h2>
+      <p>Shell Script를 이용한 샘플 자동화 스크립트를 제공합니다. (scripts 디렉터리)</p>
+      <ul>
+        <li>배포 자동화: <a href="scripts/deploy.sh">deploy.sh</a></li>
+        <li>백업 자동화: <a href="scripts/backup.sh">backup.sh</a></li>
+        <li>로그 삭제: <a href="scripts/log_cleanup.sh">log_cleanup.sh</a></li>
+        <li>상태 점검: <a href="scripts/check_status.sh">check_status.sh</a></li>
+        <li>재기동 자동화: <a href="scripts/restart.sh">restart.sh</a></li>
+      </ul>
+    </section>
+
+    <section id="prevention">
+      <h2>6. 장애 예방</h2>
+      <ul>
+        <li><strong>모니터링</strong>: 지표 + 로그 융합 알람</li>
+        <li><strong>로그 분석</strong>: 주기적 패턴 탐지 및 인사이트</li>
+        <li><strong>용량 관리</strong>: 예측 기반 확장 계획</li>
+        <li><strong>패치 적용</strong>: 취약점 기준 우선순위</li>
+        <li><strong>취약점 조치</strong>: CVE 기반 대응 프로세스</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>작성자: TP 운영팀 | 페이지 생성: 자동 샘플</p>
+  </footer>
+</body>
+</html>
