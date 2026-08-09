@@ -1,27 +1,44 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>TP 업무 소개</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TP 업무 소개</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
 <body>
-  <header>
-    <h1>TP 업무 소개</h1>
-    <p>장애 대응, 서비스 배포/운영, 성능 관리, 시스템 점검, 운영 자동화, 장애 예방</p>
-    <nav>
-      <a href="#incident">1. 장애 대응 및 원인 분석</a>
-      <a href="#deployment">2. 서비스 배포 및 운영</a>
-      <a href="#performance">3. 성능 관리</a>
-      <a href="#system">4. 시스템 점검</a>
-      <a href="#automation">5. 운영 자동화</a>
-      <a href="#prevention">6. 장애 예방</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>TP 업무 소개</h1>
+        <p class="tagline">장애 대응 · 배포/운영 · 성능 관리 · 시스템 점검 · 자동화 · 예방</p>
+      </div>
+      <nav class="main-nav">
+        <a href="#incident">장애 대응</a>
+        <a href="#deployment">배포/운영</a>
+        <a href="#performance">성능</a>
+        <a href="#system">시스템</a>
+        <a href="#automation">자동화</a>
+        <a href="#prevention">예방</a>
+      </nav>
+    </div>
   </header>
 
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>TP 운영팀의 핵심 업무와 자동화 샘플</h2>
+        <p>장애 대응부터 배포, 성능 관리, 시스템 점검, 자동화까지 실제 운영에서 바로 사용할 수 있는 가이드와 스크립트를 제공합니다.</p>
+        <p class="hero-cta"><a class="btn" href="#incident">시작하기</a> <a class="btn btn-outline" href="#automation">스크립트 보기</a></p>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <section id="incident">
+    <section id="incident" class="card">
       <h2>1. 장애 대응 및 원인 분석</h2>
       <ul>
         <li><strong>TP 서버 Boot 실패 분석</strong>: 부팅 로그, dmesg, journalctl 확인</li>
@@ -31,7 +48,7 @@
       </ul>
     </section>
 
-    <section id="deployment">
+    <section id="deployment" class="card">
       <h2>2. 서비스 배포 및 운영</h2>
       <ul>
         <li><strong>신규 서비스 등록</strong>: 서비스 메타데이터 및 모니터링 설정</li>
@@ -40,7 +57,7 @@
       </ul>
     </section>
 
-    <section id="performance">
+    <section id="performance" class="card">
       <h2>3. 성능 관리</h2>
       <ul>
         <li><strong>CPU 사용률</strong> 모니터링: 경고 임계치 정의</li>
@@ -51,7 +68,7 @@
       </ul>
     </section>
 
-    <section id="system">
+    <section id="system" class="card">
       <h2>4. 시스템 점검</h2>
       <ul>
         <li><strong>디스크 용량 확인</strong>: 용량 임계치 및 자동 경보</li>
@@ -62,7 +79,7 @@
       </ul>
     </section>
 
-    <section id="automation">
+    <section id="automation" class="card">
       <h2>5. 운영 자동화</h2>
       <p>Shell Script를 이용한 샘플 자동화 스크립트를 제공합니다. (scripts 디렉터리)</p>
       <ul>
@@ -74,12 +91,13 @@
       </ul>
     </section>
 
-    <section id="prevention">
+    <section id="prevention" class="card">
       <h2>6. 장애 예방</h2>
       <ul>
         <li><strong>모니터링</strong>: 지표 + 로그 융합 알람</li>
         <li><strong>로그 분석</strong>: 주기적 패턴 탐지 및 인사이트</li>
         <li><strong>용량 관리</strong>: 예측 기반 확장 계획</li>
+        
         <li><strong>패치 적용</strong>: 취약점 기준 우선순위</li>
         <li><strong>취약점 조치</strong>: CVE 기반 대응 프로세스</li>
       </ul>
